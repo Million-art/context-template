@@ -9,10 +9,11 @@ const TheamContextUpdate=createContext()
 }
 
 
-
-
-
+//function that have a state and control the state to send to the Dahboard component
+//parameter must be 'children'
+ 
 export default function TheamProvider({children}){
+    console.log(children)
     const [theam,setTheam]=useState(true);
 
 

@@ -1,8 +1,8 @@
  import {useTheam} from '../../context/UserContaex'
 import {useTeamUpdate} from '../../context/UserContaex'
 export default function Dashbord() {
-  const darkTheam=useTheam()
-  const toogle=useTeamUpdate()
+  const darkTheam=useTheam() //using useTheam function that return Theamcontext
+  const toogle=useTeamUpdate()//using useTheam function that return TheamcontextUpdate
 
    
   return (<>  <div><button onClick={toogle}>toogle</button></div>
